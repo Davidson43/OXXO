@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'GoodDog';
+	src: url('../fonts/gooddog-cool.eot');
+	src: local('gooddog-cool'), local('gooddog-cool'),
+		url('../fonts/gooddog-cool.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/gooddog-cool.woff') format('woff'),
+		url('../fonts/gooddog-cool.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
