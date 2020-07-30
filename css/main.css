@@ -13,6 +13,12 @@ a:hover {
 .buy-buttons-mr-1 {
 	margin-right: 1rem;
 }
+.mb-1 {
+	margin-bottom: 1rem;
+}
+.mb-2 {
+	margin-bottom: 2rem;
+}
 .mb-3 {
 	margin-bottom: 3rem;
 }
@@ -144,7 +150,8 @@ a:hover {
 }
 /*ABOUT***********************************************************/
 .about,
-.team {
+.team,
+.what {
 	padding: 6rem 0;
 }
 .work,
@@ -199,20 +206,24 @@ a:hover {
 }
 .prev,
 .next {
-	position: absolute;
-    top: 43%;
-    z-index: 10;
     padding: 0.5rem 1rem;
     background-color: rgba(247,247,247,0.2);
     cursor: pointer;
 	border: 1px solid #f7f7f7;
 	color: #f7f7f7;
+	display: inline-block;
 }
-.prev {
+.about-prev {
 	left: 1rem;
+	position: absolute;
+    z-index: 10;
+	top: 43%;
 }
-.next {
-    right: 1rem;
+.about-next {
+	right: 1rem;
+	position: absolute;
+    z-index: 10;
+	top: 43%;
 }
 .prev:hover,
 .next:hover {
@@ -384,4 +395,42 @@ a:hover {
 .buy-buttons {
 	display: flex;
 	flex-direction: row;
+}
+/*WHAT********************************************************************************/
+.what {
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../img/what.jpg');
+	background-position: center;
+	background-size: cover;
+	color: #ffffff;
+	text-align: center;
+}
+.what-slider-item__title {
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 1.4rem;
+}
+.what-prev {
+	margin-right: 1rem;
+}
+/*CLIENTS********************************************************************************/
+.clients {
+	background-color: #ff7200;
+	padding: 2rem 0;
+}
+.clients-wrap {
+	position: relative;
+}
+.clients-slider {
+	max-width: 88%;
+	margin: 0 6%;
+}
+.clients-prev {
+	position: absolute;
+	left: 0;
+	top: 10px;
+}
+.clients-next {
+	position: absolute;
+	right: 0;
+	top: 10px;
 }

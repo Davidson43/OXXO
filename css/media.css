@@ -109,6 +109,16 @@
 	.buy-buttons {
 		flex-direction: column;
 	}
+	.clients-slider {
+		max-width: 80%;
+		margin: 0 10%;
+	}
+	.clients-prev {
+		top: 0;
+	}
+	.clients-next {
+		top: 0;
+	}
 }
 @media screen and (max-width: 350px) {
 	body {
