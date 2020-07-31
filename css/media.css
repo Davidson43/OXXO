@@ -82,6 +82,19 @@
 	.buy__content-p {
 		width: 100%;
 	}
+	.responsive-wrap {
+		flex-wrap: wrap;
+	}
+	.responsive-wrap-img {
+		flex: 1 1 100%;
+		margin-bottom: 3rem;
+	}
+	.responsive-wrap-content {
+		flex: 1 1 100%;
+	}
+	.responsive-wrap-item__icon {
+		margin: 0 2rem 0 0;
+	}
 }
 @media (max-width: 576px) {
 	.container {
