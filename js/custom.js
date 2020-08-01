@@ -19,7 +19,6 @@ $(document).ready(function() {
         owlAbout.trigger('prev.owl.carousel', [500]);
     });
 
-
     var owlWhat = $('.what-slider');
     $('.what-slider').owlCarousel({
         loop:true, 
@@ -35,7 +34,6 @@ $(document).ready(function() {
         owlWhat.trigger('prev.owl.carousel', [500]);
     });
 
-
     var owlClients = $('.clients-slider');
     $('.clients-slider').owlCarousel({
         loop:true, 
@@ -43,7 +41,7 @@ $(document).ready(function() {
         smartSpeed:1000,
         items:1,
         autoplayTimeout:2000,
-        responsive:{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+        responsive:{
             0:{
                 items:2
             },
@@ -64,5 +62,16 @@ $(document).ready(function() {
     $('.clients-prev').click(function() {
         owlClients.trigger('prev.owl.carousel', [500]);
     });
+
+
+    $('.footer-accordeon__head').on('click', f_acc);
+      
+    function f_acc(){
+        $('.footer-accordeon__content').not($(this).next()).slideUp(300);
+        $('.footer-accordeon__button').not($(this).next()).removeClass('footer-accordeon__button_minus').addClass('footer-accordeon__button_plus');
+        $(this).next().slideToggle(500);
+        $(this).children('.footer-accordeon__button').removeClass('footer-accordeon__button_plus').addClass('footer-accordeon__button_minus');
+        $('.footer-accordeon__content').removeClass('d-block');
+    }
 
 });

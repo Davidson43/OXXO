@@ -32,6 +32,16 @@
 	.buy__content-p {
 		width: 80%;
 	}
+	.footer-wrap {
+		flex-wrap: wrap;
+	}
+	.footer-info,
+	.footer-posts,
+	.footer-services,
+	.footer-contact {
+		flex: 0 1 48%;
+		margin-bottom: 2rem;
+	}
 }
 @media (max-width: 768px) {
 	.container {
@@ -131,6 +141,12 @@
 	}
 	.clients-next {
 		top: 0;
+	}
+	.footer-info,
+	.footer-posts,
+	.footer-services,
+	.footer-contact {
+		flex: 0 1 100%;
 	}
 }
 @media screen and (max-width: 350px) {
