@@ -63,7 +63,6 @@ $(document).ready(function() {
         owlClients.trigger('prev.owl.carousel', [500]);
     });
 
-
     $('.footer-accordeon__head').on('click', f_acc);
       
     function f_acc(){
